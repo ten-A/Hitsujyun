@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionManifest Version="4.0" ExtensionBundleId="com.ten-artai.hitsujyun" ExtensionBundleVersion="1.0.0"
+		ExtensionBundleName="BMICalc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Author><![CDATA[Ten]]></Author>
+	<Abstract><![CDATA[No License.]]></Abstract>
+	<ExtensionList>
+		<Extension Id="com.ten-artai.hitsujyun" Version="1.0.0" />
+	</ExtensionList>
+	<ExecutionEnvironment>
+		<HostList>
+			<!-- Photoshop -->
+			<Host Name="ILST" Version="22.0" />
+			<!-- InDesign -->
+			<Host Name="IDSN" Version="14.0" />
+			<!-- InCopy -->
+			<Host Name="AICY" Version="[14.0]" />
+		</HostList>
+		<LocaleList>
+			<Locale Code="All" />
+		</LocaleList>
+		<RequiredRuntimeList>
+			<RequiredRuntime Name="CSXS" Version="4.0" />
+		</RequiredRuntimeList>
+	</ExecutionEnvironment>
+	<DispatchInfoList>
+		<Extension Id="com.ten-artai.hitsujyun">
+			<DispatchInfo >
+				<Resources>
+				<MainPath>./index.html</MainPath>
+				<ScriptPath></ScriptPath>
+				</Resources>
+				<Lifecycle>
+					<AutoVisible>true</AutoVisible>
+				</Lifecycle>
+				<UI>
+					<Type>Panel</Type>
+					<Menu>筆順変換</Menu>
+					<Geometry>
+						<Size>
+							<Height>200</Height>
+							<Width>300</Width>
+						</Size>
+					</Geometry>
+					<!--<Icons>
+						<Icon Type="Normal">./icons/regular.png</Icon>
+						<Icon Type="RollOver">./icons/active.png</Icon>
+					</Icons>-->
+				</UI>
+			</DispatchInfo>
+		</Extension>
+	</DispatchInfoList>
+</ExtensionManifest>
